@@ -3,23 +3,6 @@
 // Define the name of the CSV file
 $csv_file = 'data.csv';
 
-// --- Create a dummy data.csv file for demonstration if it doesn't exist ---
-// In a real scenario, this file would already exist.
-if (!file_exists($csv_file)) {
-    $dummy_content = <<<CSV
-ID,Status,Name,Date
-1,Active,John Doe,2023-01-15
-2,Inactive,Jane Smith,2023-01-20
-3,Pending,Peter Jones,2023-02-01
-4,Active,Alice Brown,2023-02-10
-5,Cancelled,Bob White,2023-03-05
-6,active,Charlie Green,2023-03-10
-7,Active,Diana Prince,2023-04-01
-CSV;
-    file_put_contents($csv_file, $dummy_content);
-}
-// --- End of dummy file creation ---
-
 ?>
 
 <!DOCTYPE html>
