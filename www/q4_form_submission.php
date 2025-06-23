@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // FILE_APPEND flag appends content to the file if it exists, or creates it if it doesn't.
         // LOCK_EX prevents anyone else from writing to the file at the same time.
         if (file_put_contents($filename, $formatted_message, FILE_APPEND | LOCK_EX) !== false) {
-            $success_message = "Inputs sanitized and saved to messages.txt!";
+            $success_message = "Inputs sanitized and saved to www/messages.txt";
             // Clear the form fields after successful submission (optional)
             $_POST = array(); // Clears all POST data
         } else {

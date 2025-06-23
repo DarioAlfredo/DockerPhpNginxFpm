@@ -15,6 +15,7 @@
     <title>Document</title>
 </head>
 <body>
+    <p>Developed by candidate: <strong>Dario Alfredo</strong></p><br />
     <a href="q4_form_submission.php">Q4 Form Submission</a><br />
     <a href="q6_safe_includes.php">Q6 Safe Includes</a><br />
     <a href="q7_read_csv.php">Q7 Read CSV</a><br /
